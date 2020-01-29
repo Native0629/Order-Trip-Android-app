@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="horizontal"
+android:padding="10dp"
+android:background="#fff"
+android:layout_marginHorizontal="15dp"
+android:layout_width="match_parent"
+android:weightSum="1"
+android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="0dp"
+    android:layout_weight="0.9"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/from"
+            android:text="Beijing"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:foregroundGravity="center"
+            android:id="@+id/img_air"
+            android:layout_marginHorizontal="10dp"
+            android:layout_toRightOf="@+id/from"
+            android:background="@drawable/ic_air_trip"
+
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/img_air"
+            android:id="@+id/to"
+            android:text="Moscow"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date"
+        android:text="January 28, 2019"
+        android:textSize="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_weight="0.1"
+    android:layout_width="0dp"
+    android:layout_height="match_parent"
+    android:gravity="center|right">
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/array_icon" />
+</LinearLayout>
+
+</LinearLayout>

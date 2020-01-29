@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSettingPhoneActivity">
+    <RelativeLayout
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:textSize="16dp"
+        android:layout_height="56dp">
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Add PayPal Email"
+            android:textColor="@color/general_black"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/gray_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/general_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:paddingVertical="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="asfsd@afsd.com"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textColor="@color/general_black"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginVertical="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/general_black"
+            android:textSize="12dp"
+            android:lineSpacingExtra="4dp"
+            android:layout_width="match_parent"
+            android:hint="Once your payment has been transferred, you will receive an email from PayPal with further instructions."
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:gravity="center_vertical"
+            android:layout_marginTop="20dp"
+            android:background="@color/general_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:paddingVertical="8dp"
+                android:layout_marginLeft="10dp"
+                android:text="afasfdsafasdf"
+                android:gravity="center_vertical"
+                android:background="@null"
+                android:textColor="@color/general_black"
+                android:textSize="14dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_verify_sms"
+            android:text="Save"
+            android:gravity="center"
+            android:background="@drawable/alert_btn_red"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+</LinearLayout>

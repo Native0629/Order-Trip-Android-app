@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AwaitingOffersActivity">
+    <RelativeLayout
+        android:layout_marginHorizontal="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="Awaiting offers"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:textColor="@color/general_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:id="@+id/ib_more"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_more_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_box"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/gray_back"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/general_black"
+                    android:text="Your order has been posted to our traveler feed and is now awaiting delivery oiffers. Most orders are matched with a traveler within 72 hours."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/picture"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+            </LinearLayout>
+            <ImageView
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+            <TextView
+                android:id="@+id/product_name"
+                android:layout_margin="10dp"
+                android:textSize="14dp"
+                android:gravity="center"
+                android:textColor="@color/general_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:hint="Deliver From"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/from"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/text1"
+                    android:text="Moscow"
+                    android:textColor="@color/general_black"
+                    android:paddingVertical="5dp"
+                    android:textAlignment="viewEnd"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="To"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_toRightOf="@+id/text2"
+                    android:textColor="@color/general_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beijing"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginHorizontal="10dp"
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text3"
+                    android:paddingVertical="5dp"
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="By"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:paddingVertical="5dp"
+                    android:layout_toRightOf="@+id/text3"
+                    android:textColor="@color/general_black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="May 13,2018"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginVertical="10dp"
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:hint="Category"
+                    android:textSize="12dp"
+                    android:textColor="@color/general_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/general_black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:hint="Quantity"
+                    android:textSize="12dp"
+                    android:textColor="@color/general_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/count"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/general_black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+                <!--<TextView-->
+                    <!--android:layout_marginVertical="5dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:hint="Order number"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="@color/general_black"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content" />-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="180dp"-->
+                    <!--android:layout_marginVertical="5dp"-->
+                    <!--android:text="1493353"-->
+                    <!--android:textColor="@color/general_black"-->
+                    <!--android:textSize="12dp" />-->
+            <!--</RelativeLayout>-->
+            <RelativeLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:hint="Weight"
+                    android:textSize="12dp"
+                    android:textColor="@color/general_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="180dp"
+                    android:textColor="@color/general_black"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+            <ImageView
+                android:layout_marginVertical="10dp"
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="3dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="12dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Price for 1 Projuct"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/price"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="180dp"
+                    android:textColor="@color/general_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:text="Taxes and Fees"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/tax"
+                    android:paddingVertical="5dp"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="180dp"
+                    android:textColor="@color/general_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="Estimated Total"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/total_price"
+                    android:textSize="12dp"
+                    android:layout_marginLeft="180dp"
+                    android:textColor="@color/general_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:background="@color/gray_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:paddingTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="DELIVERY OFFERS"
+                    android:textSize="12dp" />
+                <TextView
+                    android:id="@+id/status"
+                    android:gravity="center"
+                    android:background="@drawable/back_txt_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="5dp"
+                    android:textSize="12dp" />
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/rl_request_delivery"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="25dp">
+
+                <TextView
+                    android:id="@+id/tv_upcoming_trip"
+                    android:text="Request delivery"
+                    android:textColor="@color/text_blue"
+                    android:textSize="14dp"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="13dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/array_icon" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

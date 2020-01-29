@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "443233509156",
+    "firebase_url": "https://ordertrip-26c0f.firebaseio.com",
+    "project_id": "ordertrip-26c0f",
+    "storage_bucket": "ordertrip-26c0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:443233509156:android:cdcbf917c5609a68",
+        "android_client_info": {
+          "package_name": "com.business.order_trip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "443233509156-m26o0ub60bu941epc9ovib1acnge7sv0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.business.order_trip",
+            "certificate_hash": "9f7bababf1d0488ffea538ad79aaa419f72942aa"
+          }
+        },
+        {
+          "client_id": "443233509156-ac7s0qv0b9toptg2topth46t24i4v7mk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMLJpbNEZZ9IsrzOaBjad0i_sMe_JWSv8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "443233509156-ac7s0qv0b9toptg2topth46t24i4v7mk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

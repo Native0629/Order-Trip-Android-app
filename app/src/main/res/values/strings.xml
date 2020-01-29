@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">order_trip</string>
+
+    <!-- Facebook application ID and custom URL scheme (app ID prefixed by 'fb'). -->
+
+    <string name="facebook_app_id">421803418578786</string>
+    <string name="fb_login_protocol_scheme">fb421803418578786</string>
+
+
+    <!--Twitter consumer key and secret -->
+    <!--<string name="twitter_consumer_key" translatable="false">YOUR_CONSUMER_KEY</string>-->
+    <!--<string name="twitter_consumer_secret" translatable="false">YOUR_CONSUMER_SECRET</string>-->
+
+
+    <string name="google_map_api_key">AIzaSyCMLJpbNEZZ9IsrzOaBjad0i_sMe_JWSv8</string>
+
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="msg_token_fmt">sdafasdfefsafc</string>
+
+
+    <!-- Messages -->
+    <string name="finish_app">Are you sure to finish this app?</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string name="password_min_length_message">Password must be more than 8 characters.</string>
+
+    <string name="fill_message">Please fill in all fields.</string>
+    <string name="invalid_email_message">Invalid email address.</string>
+    <string name="accepted_success_message">Successfully accepted.</string>
+    <string name="declined_success_message">Successfully declined.</string>
+    <string name="deleted_success_message">Successfully deleted.</string>
+    <string name="number_min_length_message">Phone number must be more than 6 characters, less than 13 characters.</string>
+    <string name="password_not_match_message">Password does not match.</string>
+    <string name="image_upload_message">Please upload image.</string>
+    <string name="email_verify_message">Signup success! We have sent your email a verification link. Please confirm to verify your email.</string>
+    <string name="email_not_verified_message">Please verify your email address before login.</string>
+    <string name="password_reset_message">Password request has been submitted successfully. Please check your email to reset password.</string>
+    <string name="create_success_message">Successfully created.</string>
+    <string name="update_success_message">Successfully updated.</string>
+    <string name="submit_success_message">Successfully submitted.</string>
+    <string name="join_success_message">Successfully joined.</string>
+    <string name="select_type_message">Please select a type.</string>
+    <string name="time_set_message">To date can not be equal or prior to From date.</string>
+    <string name="join_message">Are you sure to join this party?</string>
+    <string name="delete_message">Are you sure to delete this party?</string>
+    <string name="no_search_result_message">No place result by this name.</string>
+    <string name="enable_location_message">In order to get full service, please enable location on setting and re-login to this page.</string>
+    <string name="enable_sms_message">In order to send SMS, please enable SMS on setting and re-login to this page.</string>
+    <string name="request_success_message">Request has been sent successfully.</string>
+    <string name="email_success_message">Email has been sent successfully.</string>
+    <string name="profile_update_success_message">Profile has been updated successfully.</string>
+    <string name="allow_location_message">Please allow app to get your location.</string>
+    <string name="require_email_verify_message">This will require re-login with email verification.</string>
+    <string name="sms_success_message">SMS has been sent successfully.</string>
+    <string name="invalid_email_password">Invalid email or password.</string>
+    <string name="email_exist">Email already exists.</string>
+
+    <string name="slide_text1">After the work, there is Life !</string>
+    <string name="slide_text2">Enjoy good moments !</string>
+    <string name="slide_text3">With Friends and colleagues !</string>
+    <string name="slide_text4">With family !</string>
+    <string name="slide_text5">Overcome your daily stress now !</string>
+
+    <string name="agree_terms">I agree to <u>Privacy Policy &amp; Terms of Use</u>.</string>
+    <string name="terms_use">Privacy Policy &amp; Terms of Use</string>
+    <string name="agree_terms_message">You should agree to Privacy Policy &amp; Terms of Use.</string>
+    <string name="abuse_message">Do you want to report abuse?</string>
+    <string name="abuse_choose">Please choose one of abuse types</string>
+    <string name="abuse1">Not compliant with our Terms of Use</string>
+    <string name="abuse2">Racism, Xenophobia, Social Exclusion</string>
+    <string name="abuse3">Violence</string>
+    <string name="abuse4">Apology of Terrorism</string>
+    <string name="abuse5">Copyrights complaint</string>
+    <string name="abuse6">Human rights</string>
+    <string name="abuse7">National security</string>
+    <string name="abuse8">Sexual content</string>
+    <string name="abuse9">Children abuse</string>
+
+    <string name="login_admin_message">This account is protected by administrator. Please try with other one.</string>
+    <string name="report_success_message">Successfully reported.</string>
+
+</resources>

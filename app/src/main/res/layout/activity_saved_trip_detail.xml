@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:background="@color/gray_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SavedTripDetailActivity">
+    <RelativeLayout
+        android:background="@color/general_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <ImageButton
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/ib_back"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_back_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginHorizontal="10dp"
+            android:textSize="16dp"
+            android:textColor="@color/general_black"
+            android:text="Saved Trip Details"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:id="@+id/ib_more"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_more_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageButton
+            android:id="@+id/ib_box"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ic_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ImageView
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:paddingVertical="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_marginHorizontal="15dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/trip_date"
+                        android:textColor="@color/general_white"
+                        android:paddingVertical="5dp"
+                        android:textSize="18dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/trip_from"
+                            android:textColor="@color/general_white"
+                            android:textSize="18dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <ImageView
+                            android:id="@+id/img_air"
+                            android:rotation="90"
+                            android:background="@drawable/ic_white_air"
+                            android:layout_centerVertical="true"
+                            android:foregroundGravity="center"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_toRightOf="@+id/trip_from"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_toRightOf="@+id/img_air"
+                        android:id="@+id/trip_to"
+                        android:textSize="18dp"
+                        android:textColor="@color/general_white"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:foregroundGravity="center"
+                        android:background="@color/general_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/count_earning"
+                            android:text="US$"
+                            android:textColor="@color/general_white"
+                            android:textSize="12dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:id="@+id/reward"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/count_earning"
+                            android:textColor="@color/general_white"
+                            android:textSize="16dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RelativeLayout>
+                    <TextView
+                        android:text="Earnings"
+                        android:textColor="@color/general_white"
+                        android:textSize="16dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <ImageView
+                        android:layout_centerVertical="true"
+                        android:foregroundGravity="center"
+                        android:background="@color/general_white"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:text="All Available Orders"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ProgressBar
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                android:id="@+id/progressBar"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+
+            <ListView
+                android:scrollbars="none"
+                android:id="@+id/lv_saved_trip_details"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="361dp"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/general_white"
+                android:divider="@color/gray_back"
+                android:dividerHeight="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/warning"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </LinearLayout>

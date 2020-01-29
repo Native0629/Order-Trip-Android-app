@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@drawable/ic_note_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginVertical="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.8"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/from2"
+            android:text="aaa"
+            android:textColor="@color/general_black"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/to2"
+            android:text="aaa"
+            android:textColor="@color/general_black"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/date2"
+            android:hint="january 31, 2019"
+            android:textColor="@color/general_black"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <Switch
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</LinearLayout>
